@@ -26,4 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startNavigation:(UIButton *)sender {
+}
+
+- (IBAction)stopNavigation:(UIButton *)sender {
+}
+
 @end
