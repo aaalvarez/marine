@@ -23,6 +23,7 @@
 		159A0B8016880E8300FEAB61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159A0B5B16880E8300FEAB61 /* Foundation.framework */; };
 		159A0B8816880E8300FEAB61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 159A0B8616880E8300FEAB61 /* InfoPlist.strings */; };
 		159A0B8B16880E8300FEAB61 /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A0B8A16880E8300FEAB61 /* NavigationTests.m */; };
+		159A0B961688332800FEAB61 /* NavigationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A0B951688332800FEAB61 /* NavigationModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		159A0B8716880E8300FEAB61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		159A0B8916880E8300FEAB61 /* NavigationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTests.h; sourceTree = "<group>"; };
 		159A0B8A16880E8300FEAB61 /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
+		159A0B941688332800FEAB61 /* NavigationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationModel.h; sourceTree = "<group>"; };
+		159A0B951688332800FEAB61 /* NavigationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				159A0B6816880E8300FEAB61 /* NavigationAppDelegate.h */,
 				159A0B6916880E8300FEAB61 /* NavigationAppDelegate.m */,
 				159A0B7116880E8300FEAB61 /* MainStoryboard.storyboard */,
+				159A0B941688332800FEAB61 /* NavigationModel.h */,
+				159A0B951688332800FEAB61 /* NavigationModel.m */,
 				159A0B7416880E8300FEAB61 /* NavigationViewController.h */,
 				159A0B7516880E8300FEAB61 /* NavigationViewController.m */,
 				159A0B6016880E8300FEAB61 /* Supporting Files */,
@@ -274,6 +279,7 @@
 				159A0B6616880E8300FEAB61 /* main.m in Sources */,
 				159A0B6A16880E8300FEAB61 /* NavigationAppDelegate.m in Sources */,
 				159A0B7616880E8300FEAB61 /* NavigationViewController.m in Sources */,
+				159A0B961688332800FEAB61 /* NavigationModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
