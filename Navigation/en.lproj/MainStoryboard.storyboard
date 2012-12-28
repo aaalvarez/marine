@@ -22,7 +22,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startNavigation:" destination="2" eventType="touchUpInside" id="fnf-Fl-6jV"/>
+                                    <action selector="startNavigation:" destination="2" eventType="touchUpInside" id="8cN-N0-YZ9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xua-Fa-NQv">
@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopNavigation:" destination="2" eventType="touchUpInside" id="zDc-4C-hxd"/>
+                                    <action selector="stopNavigation:" destination="2" eventType="touchUpInside" id="xvz-YG-Klj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,9 +47,6 @@
                             <constraint firstItem="xua-Fa-NQv" firstAttribute="leading" secondItem="ua1-qj-o3X" secondAttribute="leading" type="default" id="wf0-OA-hXi"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="startNavigation" destination="ua1-qj-o3X" id="iZd-6E-Kon"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface NavigationModel : NSObject
+@interface NavigationModel : NSObject <CLLocationManagerDelegate>
 
 @end

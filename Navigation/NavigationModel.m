@@ -8,6 +8,20 @@
 
 #import "NavigationModel.h"
 
+//@interface NavigationModel()
+
+//@property (nonatomic, strong) CLLocationManager *myLocationManager;
+//@end
+//
 @implementation NavigationModel
 
+//@synthesize myLocationManager;
+//
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    CLLocation *lastLocation = [locations lastObject];
+    NSLog(@"Latitude=%f",lastLocation.coordinate.latitude);
+}
+//
+//
+//
 @end
