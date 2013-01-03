@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15139894169438E300AD37AF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15139893169438E300AD37AF /* MapViewController.m */; };
 		15255BA5168C013500C5E356 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15255BA4168C013500C5E356 /* CoreLocation.framework */; };
 		15255BA8168C014600C5E356 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15255BA7168C014600C5E356 /* MapKit.framework */; };
 		159A0B5A16880E8300FEAB61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159A0B5916880E8300FEAB61 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15139892169438E300AD37AF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		15139893169438E300AD37AF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		15255BA4168C013500C5E356 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		15255BA7168C014600C5E356 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		159A0B5516880E8300FEAB61 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +139,8 @@
 				159A0B7416880E8300FEAB61 /* NavigationViewController.h */,
 				159A0B7516880E8300FEAB61 /* NavigationViewController.m */,
 				159A0B6016880E8300FEAB61 /* Supporting Files */,
+				15139892169438E300AD37AF /* MapViewController.h */,
+				15139893169438E300AD37AF /* MapViewController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				159A0B6A16880E8300FEAB61 /* NavigationAppDelegate.m in Sources */,
 				159A0B7616880E8300FEAB61 /* NavigationViewController.m in Sources */,
 				159A0B961688332800FEAB61 /* NavigationModel.m in Sources */,
+				15139894169438E300AD37AF /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
