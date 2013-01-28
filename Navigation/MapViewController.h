@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface MapViewController : UIViewController
+
+@property (nonatomic, strong) MKMapView *myMapView;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
 @end

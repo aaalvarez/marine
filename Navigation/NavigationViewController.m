@@ -12,16 +12,20 @@
 @interface NavigationViewController ()
 
 @property (nonatomic, strong) CLLocationManager *myLocationManager;
+@property (nonatomic, strong) CLLocation *lastLocation;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
 @end
 
 @implementation NavigationViewController
 
-@synthesize myLocationManager;
+@synthesize myLocationManager = _myLocationManager;
+@synthesize lastLocation = _lastLocation;
+@synthesize coordinate = _coordinate;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
-    CLLocation *lastLocation = [locations lastObject];
-    NSLog(@"Latitude=%f",lastLocation.coordinate.latitude);
+    _lastLocation = [locations lastObject];
+    NSLog(@"Latitude=%f",_lastLocation.coordinate.latitude);
 }
 
 - (void)viewDidLoad
@@ -49,8 +53,17 @@
     }
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"source controller = %@", [segue sourceViewController]);
+    NSLog(@"destination controller = %@", [segue destinationViewController]);
+    NSLog(@"identifier = %@", [segue identifier]);
+}
+
 - (IBAction)stopNavigation:(UIButton *)sender {
     [self.myLocationManager stopUpdatingLocation];
+    NSLog(@"Latitude after stop=%f",_lastLocation.coordinate.latitude);
+    _coordinate.latitude = _lastLocation.coordinate.latitude;
+    _coordinate.longitude = _lastLocation.coordinate.longitude;
 }
 
 @end

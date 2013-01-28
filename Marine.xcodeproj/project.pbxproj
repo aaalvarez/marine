@@ -27,6 +27,7 @@
 		159A0B8816880E8300FEAB61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 159A0B8616880E8300FEAB61 /* InfoPlist.strings */; };
 		159A0B8B16880E8300FEAB61 /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A0B8A16880E8300FEAB61 /* NavigationTests.m */; };
 		159A0B961688332800FEAB61 /* NavigationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A0B951688332800FEAB61 /* NavigationModel.m */; };
+		15AAC503169D75310072F9E8 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AAC502169D75310072F9E8 /* MyAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +45,14 @@
 		15139893169438E300AD37AF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		15255BA4168C013500C5E356 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		15255BA7168C014600C5E356 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		159A0B5516880E8300FEAB61 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		159A0B5516880E8300FEAB61 /* Marine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159A0B5916880E8300FEAB61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		159A0B5B16880E8300FEAB61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		159A0B5D16880E8300FEAB61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		159A0B6116880E8300FEAB61 /* Navigation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Navigation-Info.plist"; sourceTree = "<group>"; };
+		159A0B6116880E8300FEAB61 /* Marine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Marine-Info.plist"; sourceTree = "<group>"; };
 		159A0B6316880E8300FEAB61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		159A0B6516880E8300FEAB61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		159A0B6716880E8300FEAB61 /* Navigation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Navigation-Prefix.pch"; sourceTree = "<group>"; };
+		159A0B6716880E8300FEAB61 /* Marine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Marine-Prefix.pch"; sourceTree = "<group>"; };
 		159A0B6816880E8300FEAB61 /* NavigationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationAppDelegate.h; sourceTree = "<group>"; };
 		159A0B6916880E8300FEAB61 /* NavigationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAppDelegate.m; sourceTree = "<group>"; };
 		159A0B6B16880E8300FEAB61 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -60,14 +61,16 @@
 		159A0B7216880E8300FEAB61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		159A0B7416880E8300FEAB61 /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		159A0B7516880E8300FEAB61 /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
-		159A0B7C16880E8300FEAB61 /* NavigationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		159A0B7C16880E8300FEAB61 /* MarineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		159A0B7D16880E8300FEAB61 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		159A0B8516880E8300FEAB61 /* NavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationTests-Info.plist"; sourceTree = "<group>"; };
+		159A0B8516880E8300FEAB61 /* MarineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarineTests-Info.plist"; sourceTree = "<group>"; };
 		159A0B8716880E8300FEAB61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		159A0B8916880E8300FEAB61 /* NavigationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTests.h; sourceTree = "<group>"; };
 		159A0B8A16880E8300FEAB61 /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
 		159A0B941688332800FEAB61 /* NavigationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationModel.h; sourceTree = "<group>"; };
 		159A0B951688332800FEAB61 /* NavigationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationModel.m; sourceTree = "<group>"; };
+		15AAC501169D75310072F9E8 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		15AAC502169D75310072F9E8 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +114,8 @@
 		159A0B5616880E8300FEAB61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				159A0B5516880E8300FEAB61 /* Navigation.app */,
-				159A0B7C16880E8300FEAB61 /* NavigationTests.octest */,
+				159A0B5516880E8300FEAB61 /* Marine.app */,
+				159A0B7C16880E8300FEAB61 /* MarineTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +144,8 @@
 				159A0B6016880E8300FEAB61 /* Supporting Files */,
 				15139892169438E300AD37AF /* MapViewController.h */,
 				15139893169438E300AD37AF /* MapViewController.m */,
+				15AAC501169D75310072F9E8 /* MyAnnotation.h */,
+				15AAC502169D75310072F9E8 /* MyAnnotation.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -148,10 +153,10 @@
 		159A0B6016880E8300FEAB61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				159A0B6116880E8300FEAB61 /* Navigation-Info.plist */,
+				159A0B6116880E8300FEAB61 /* Marine-Info.plist */,
 				159A0B6216880E8300FEAB61 /* InfoPlist.strings */,
 				159A0B6516880E8300FEAB61 /* main.m */,
-				159A0B6716880E8300FEAB61 /* Navigation-Prefix.pch */,
+				159A0B6716880E8300FEAB61 /* Marine-Prefix.pch */,
 				159A0B6B16880E8300FEAB61 /* Default.png */,
 				159A0B6D16880E8300FEAB61 /* Default@2x.png */,
 				159A0B6F16880E8300FEAB61 /* Default-568h@2x.png */,
@@ -172,7 +177,7 @@
 		159A0B8416880E8300FEAB61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				159A0B8516880E8300FEAB61 /* NavigationTests-Info.plist */,
+				159A0B8516880E8300FEAB61 /* MarineTests-Info.plist */,
 				159A0B8616880E8300FEAB61 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -181,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		159A0B5416880E8300FEAB61 /* Navigation */ = {
+		159A0B5416880E8300FEAB61 /* Marine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 159A0B8E16880E8300FEAB61 /* Build configuration list for PBXNativeTarget "Navigation" */;
+			buildConfigurationList = 159A0B8E16880E8300FEAB61 /* Build configuration list for PBXNativeTarget "Marine" */;
 			buildPhases = (
 				159A0B5116880E8300FEAB61 /* Sources */,
 				159A0B5216880E8300FEAB61 /* Frameworks */,
@@ -193,14 +198,14 @@
 			);
 			dependencies = (
 			);
-			name = Navigation;
+			name = Marine;
 			productName = Navigation;
-			productReference = 159A0B5516880E8300FEAB61 /* Navigation.app */;
+			productReference = 159A0B5516880E8300FEAB61 /* Marine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		159A0B7B16880E8300FEAB61 /* NavigationTests */ = {
+		159A0B7B16880E8300FEAB61 /* MarineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 159A0B9116880E8300FEAB61 /* Build configuration list for PBXNativeTarget "NavigationTests" */;
+			buildConfigurationList = 159A0B9116880E8300FEAB61 /* Build configuration list for PBXNativeTarget "MarineTests" */;
 			buildPhases = (
 				159A0B7716880E8300FEAB61 /* Sources */,
 				159A0B7816880E8300FEAB61 /* Frameworks */,
@@ -212,9 +217,9 @@
 			dependencies = (
 				159A0B8216880E8300FEAB61 /* PBXTargetDependency */,
 			);
-			name = NavigationTests;
+			name = MarineTests;
 			productName = NavigationTests;
-			productReference = 159A0B7C16880E8300FEAB61 /* NavigationTests.octest */;
+			productReference = 159A0B7C16880E8300FEAB61 /* MarineTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +232,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Alejo;
 			};
-			buildConfigurationList = 159A0B4F16880E8300FEAB61 /* Build configuration list for PBXProject "Navigation" */;
+			buildConfigurationList = 159A0B4F16880E8300FEAB61 /* Build configuration list for PBXProject "Marine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,8 +244,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				159A0B5416880E8300FEAB61 /* Navigation */,
-				159A0B7B16880E8300FEAB61 /* NavigationTests */,
+				159A0B5416880E8300FEAB61 /* Marine */,
+				159A0B7B16880E8300FEAB61 /* MarineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +299,7 @@
 				159A0B7616880E8300FEAB61 /* NavigationViewController.m in Sources */,
 				159A0B961688332800FEAB61 /* NavigationModel.m in Sources */,
 				15139894169438E300AD37AF /* MapViewController.m in Sources */,
+				15AAC503169D75310072F9E8 /* MyAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +316,7 @@
 /* Begin PBXTargetDependency section */
 		159A0B8216880E8300FEAB61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 159A0B5416880E8300FEAB61 /* Navigation */;
+			target = 159A0B5416880E8300FEAB61 /* Marine */;
 			targetProxy = 159A0B8116880E8300FEAB61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,9 +403,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Navigation/Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Navigation/Navigation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Navigation/Marine-Prefix.pch";
+				INFOPLIST_FILE = "Navigation/Marine-Info.plist";
+				PRODUCT_NAME = Marine;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,9 +414,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Navigation/Navigation-Prefix.pch";
-				INFOPLIST_FILE = "Navigation/Navigation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Navigation/Marine-Prefix.pch";
+				INFOPLIST_FILE = "Navigation/Marine-Info.plist";
+				PRODUCT_NAME = Marine;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -425,8 +431,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Navigation/Navigation-Prefix.pch";
-				INFOPLIST_FILE = "NavigationTests/NavigationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "NavigationTests/MarineTests-Info.plist";
+				PRODUCT_NAME = MarineTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -442,8 +448,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Navigation/Navigation-Prefix.pch";
-				INFOPLIST_FILE = "NavigationTests/NavigationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "NavigationTests/MarineTests-Info.plist";
+				PRODUCT_NAME = MarineTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -452,7 +458,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		159A0B4F16880E8300FEAB61 /* Build configuration list for PBXProject "Navigation" */ = {
+		159A0B4F16880E8300FEAB61 /* Build configuration list for PBXProject "Marine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				159A0B8C16880E8300FEAB61 /* Debug */,
@@ -461,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		159A0B8E16880E8300FEAB61 /* Build configuration list for PBXNativeTarget "Navigation" */ = {
+		159A0B8E16880E8300FEAB61 /* Build configuration list for PBXNativeTarget "Marine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				159A0B8F16880E8300FEAB61 /* Debug */,
@@ -470,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		159A0B9116880E8300FEAB61 /* Build configuration list for PBXNativeTarget "NavigationTests" */ = {
+		159A0B9116880E8300FEAB61 /* Build configuration list for PBXNativeTarget "MarineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				159A0B9216880E8300FEAB61 /* Debug */,
