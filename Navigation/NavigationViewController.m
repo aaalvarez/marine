@@ -7,6 +7,7 @@
 //
 
 #import "NavigationViewController.h"
+#import "MapViewController.h"
 //#import "NavigationModel.h"
 
 @interface NavigationViewController ()
@@ -57,11 +58,14 @@
     NSLog(@"source controller = %@", [segue sourceViewController]);
     NSLog(@"destination controller = %@", [segue destinationViewController]);
     NSLog(@"identifier = %@", [segue identifier]);
+    MapViewController *map = [segue destinationViewController];
+    map.coordinate = _coordinate;
 }
 
 - (IBAction)stopNavigation:(UIButton *)sender {
     [self.myLocationManager stopUpdatingLocation];
     NSLog(@"Latitude after stop=%f",_lastLocation.coordinate.latitude);
+    NSLog(@"Longitud after stop=%f",_lastLocation.coordinate.longitude);
     _coordinate.latitude = _lastLocation.coordinate.latitude;
     _coordinate.longitude = _lastLocation.coordinate.longitude;
 }

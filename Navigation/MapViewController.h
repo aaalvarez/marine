@@ -12,6 +12,6 @@
 @interface MapViewController : UIViewController
 
 @property (nonatomic, strong) MKMapView *myMapView;
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic) CLLocationCoordinate2D coordinate;
 
 @end
