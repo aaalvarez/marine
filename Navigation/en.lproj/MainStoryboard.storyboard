@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RTA-5c-eaU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RTA-5c-eaU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller - Navigation App-->
@@ -70,11 +70,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xua-Fa-NQv" firstAttribute="top" secondItem="3" secondAttribute="top" constant="192" id="332-AH-gHO"/>
+                            <constraint firstItem="ua1-qj-o3X" firstAttribute="trailing" secondItem="xua-Fa-NQv" secondAttribute="trailing" type="default" id="4ko-US-voY"/>
                             <constraint firstAttribute="bottom" secondItem="bKt-pO-ZpP" secondAttribute="bottom" constant="74" id="91y-lK-ese"/>
-                            <constraint firstItem="ua1-qj-o3X" firstAttribute="top" secondItem="3" secondAttribute="top" constant="70" id="9Ok-oh-91g"/>
                             <constraint firstItem="bKt-pO-ZpP" firstAttribute="centerX" secondItem="xua-Fa-NQv" secondAttribute="centerX" type="default" id="b8o-hI-ldK"/>
                             <constraint firstItem="xua-Fa-NQv" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="oqB-hR-Y5a"/>
-                            <constraint firstItem="xua-Fa-NQv" firstAttribute="leading" secondItem="ua1-qj-o3X" secondAttribute="leading" type="default" id="wf0-OA-hXi"/>
+                            <constraint firstItem="ua1-qj-o3X" firstAttribute="top" secondItem="3" secondAttribute="top" constant="83" id="y3C-ZX-Qrq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XIB-Lw-UDn"/>
@@ -144,15 +144,30 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiV-EJ-oUw">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="json">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateJson:" destination="bic-EC-D1W" eventType="touchUpInside" id="AfF-3P-duB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gC3-he-VpI" firstAttribute="top" secondItem="bEx-QL-sra" secondAttribute="top" constant="70" id="A3Z-ND-VZg"/>
-                            <constraint firstItem="Dnb-Ts-WGn" firstAttribute="centerX" secondItem="bEx-QL-sra" secondAttribute="centerX" type="default" id="I7v-hh-DH1"/>
-                            <constraint firstItem="cQc-bU-Crx" firstAttribute="centerX" secondItem="Dnb-Ts-WGn" secondAttribute="centerX" type="default" id="cFR-tb-J8B"/>
-                            <constraint firstAttribute="bottom" secondItem="cQc-bU-Crx" secondAttribute="bottom" constant="74" id="cTx-R9-Dgl"/>
-                            <constraint firstItem="Dnb-Ts-WGn" firstAttribute="top" secondItem="bEx-QL-sra" secondAttribute="top" constant="192" id="mLc-cz-0Ew"/>
-                            <constraint firstItem="Dnb-Ts-WGn" firstAttribute="leading" secondItem="gC3-he-VpI" secondAttribute="leading" type="default" id="u7y-M5-zdX"/>
+                            <constraint firstItem="SiV-EJ-oUw" firstAttribute="centerX" secondItem="cQc-bU-Crx" secondAttribute="centerX" type="default" id="Dam-Ux-Yc6"/>
+                            <constraint firstItem="SiV-EJ-oUw" firstAttribute="centerX" secondItem="Dnb-Ts-WGn" secondAttribute="centerX" type="default" id="HN8-co-zaC"/>
+                            <constraint firstItem="SiV-EJ-oUw" firstAttribute="top" secondItem="bEx-QL-sra" secondAttribute="top" constant="171" id="IKL-35-Yv6"/>
+                            <constraint firstItem="gC3-he-VpI" firstAttribute="leading" secondItem="Dnb-Ts-WGn" secondAttribute="leading" type="default" id="PRN-2m-FR5"/>
+                            <constraint firstItem="gC3-he-VpI" firstAttribute="top" secondItem="bEx-QL-sra" secondAttribute="top" constant="33" id="WEf-ke-4uz"/>
+                            <constraint firstItem="cQc-bU-Crx" firstAttribute="leading" secondItem="bEx-QL-sra" secondAttribute="leading" constant="95" id="ijF-Wx-Nks"/>
+                            <constraint firstItem="Dnb-Ts-WGn" firstAttribute="top" secondItem="bEx-QL-sra" secondAttribute="top" constant="102" id="jXp-WR-Caa"/>
+                            <constraint firstAttribute="bottom" secondItem="cQc-bU-Crx" secondAttribute="bottom" constant="168" id="zjF-un-QkR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0oh-S9-GOJ"/>
@@ -171,6 +186,11 @@
         </class>
         <class className="NavigationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NavigationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="generateJson:" candidateClass="UIButton"/>
+                <relationship kind="action" name="startNavigation:" candidateClass="UIButton"/>
+                <relationship kind="action" name="stopNavigation:" candidateClass="UIButton"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

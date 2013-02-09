@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150F050716C1080D00BB8803 /* CSMapRouteLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 150F050616C1080D00BB8803 /* CSMapRouteLayerView.m */; };
 		15139894169438E300AD37AF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15139893169438E300AD37AF /* MapViewController.m */; };
 		15255BA5168C013500C5E356 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15255BA4168C013500C5E356 /* CoreLocation.framework */; };
 		15255BA8168C014600C5E356 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15255BA7168C014600C5E356 /* MapKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150F050516C1080D00BB8803 /* CSMapRouteLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMapRouteLayerView.h; sourceTree = "<group>"; };
+		150F050616C1080D00BB8803 /* CSMapRouteLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMapRouteLayerView.m; sourceTree = "<group>"; };
 		15139892169438E300AD37AF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		15139893169438E300AD37AF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		15255BA4168C013500C5E356 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -143,6 +146,8 @@
 				159A0B7516880E8300FEAB61 /* NavigationViewController.m */,
 				159A0B6016880E8300FEAB61 /* Supporting Files */,
 				15139892169438E300AD37AF /* MapViewController.h */,
+				150F050516C1080D00BB8803 /* CSMapRouteLayerView.h */,
+				150F050616C1080D00BB8803 /* CSMapRouteLayerView.m */,
 				15139893169438E300AD37AF /* MapViewController.m */,
 				15AAC501169D75310072F9E8 /* MyAnnotation.h */,
 				15AAC502169D75310072F9E8 /* MyAnnotation.m */,
@@ -300,6 +305,7 @@
 				159A0B961688332800FEAB61 /* NavigationModel.m in Sources */,
 				15139894169438E300AD37AF /* MapViewController.m in Sources */,
 				15AAC503169D75310072F9E8 /* MyAnnotation.m in Sources */,
+				150F050716C1080D00BB8803 /* CSMapRouteLayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +412,7 @@
 				GCC_PREFIX_HEADER = "Navigation/Marine-Prefix.pch";
 				INFOPLIST_FILE = "Navigation/Marine-Info.plist";
 				PRODUCT_NAME = Marine;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -417,6 +424,7 @@
 				GCC_PREFIX_HEADER = "Navigation/Marine-Prefix.pch";
 				INFOPLIST_FILE = "Navigation/Marine-Info.plist";
 				PRODUCT_NAME = Marine;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

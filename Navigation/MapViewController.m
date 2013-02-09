@@ -17,6 +17,8 @@
 
 @synthesize myMapView = _myMapView;
 @synthesize coordinate = _coordinate;
+@synthesize locations = _locations;
+@synthesize routeView = _routeView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,9 +42,11 @@
     NSLog(@"Longitud in map =%f",_coordinate.longitude);
     
     //CLLocationCoordinate2D location1 = CLLocationCoordinate2DMake(50.82191692907181, -0.13811767101287842);
-    
+    /*
     MyAnnotation *annotation = [[MyAnnotation alloc] initWithCoordinates:_coordinate title:@"title"];
     [self.myMapView addAnnotation:annotation];
+     */
+    _routeView = [[CSMapRouteLayerView alloc] initWithRoute:_locations mapView:self.myMapView];
 }
 
 - (void)didReceiveMemoryWarning

@@ -15,6 +15,7 @@
 @property (nonatomic, strong) CLLocationManager *myLocationManager;
 @property (nonatomic, strong) CLLocation *lastLocation;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, strong) NSMutableArray *locations;
 
 @end
 
@@ -23,10 +24,14 @@
 @synthesize myLocationManager = _myLocationManager;
 @synthesize lastLocation = _lastLocation;
 @synthesize coordinate = _coordinate;
+@synthesize locations = _locations;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     _lastLocation = [locations lastObject];
     NSLog(@"Latitude=%f",_lastLocation.coordinate.latitude);
+    
+    NSArray *location 
+    [_locations addObject:_lastLocation];
 }
 
 - (void)viewDidLoad
@@ -42,6 +47,7 @@
 }
 
 - (IBAction)startNavigation:(UIButton *)sender {
+    _locations = [NSMutableArray array];
     if ([CLLocationManager locationServicesEnabled]) {
         self.myLocationManager = [[CLLocationManager alloc]init];
         
@@ -68,6 +74,16 @@
     NSLog(@"Longitud after stop=%f",_lastLocation.coordinate.longitude);
     _coordinate.latitude = _lastLocation.coordinate.latitude;
     _coordinate.longitude = _lastLocation.coordinate.longitude;
+    NSLog(@"count objects in locations array: %u", [_locations count]);
+    
+
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_locations options:NSJSONWritingPrettyPrinted error:&error];
+    if([jsonData length] > 0 && error == nil){
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSLog(@"JSON STRING: %@", jsonString);
+    }
+    
 }
 
 @end
