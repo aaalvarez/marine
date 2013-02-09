@@ -29,9 +29,13 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     _lastLocation = [locations lastObject];
     NSLog(@"Latitude=%f",_lastLocation.coordinate.latitude);
-    
-    NSArray *location 
-    [_locations addObject:_lastLocation];
+    NSNumber *latitude = [NSNumber numberWithDouble:_lastLocation.coordinate.latitude];
+    NSString *latitudeString = [NSString stringWithFormat:@"%f",[latitude doubleValue]];
+    NSNumber *longitude = [NSNumber numberWithDouble:_lastLocation.coordinate.longitude];
+    NSString *longitudeString = [NSString stringWithFormat:@"%f",[longitude doubleValue]];
+
+    NSArray *coordinate = [NSArray arrayWithObjects:latitudeString, longitudeString, nil];
+    [_locations addObject:coordinate];
 }
 
 - (void)viewDidLoad
