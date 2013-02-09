@@ -19,7 +19,7 @@
 //
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     CLLocation *lastLocation = [locations lastObject];
-    NSLog(@"Latitude=%f",lastLocation.coordinate.latitude);
+    //NSLog(@"Latitude=%f",lastLocation.coordinate.latitude);
 }
 //
 //

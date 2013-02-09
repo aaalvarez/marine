@@ -28,7 +28,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     _lastLocation = [locations lastObject];
-    NSLog(@"Latitude=%f",_lastLocation.coordinate.latitude);
+    //NSLog(@"Latitude=%f",_lastLocation.coordinate.latitude);
     NSNumber *latitude = [NSNumber numberWithDouble:_lastLocation.coordinate.latitude];
     NSString *latitudeString = [NSString stringWithFormat:@"%f",[latitude doubleValue]];
     NSNumber *longitude = [NSNumber numberWithDouble:_lastLocation.coordinate.longitude];
@@ -65,29 +65,27 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSLog(@"source controller = %@", [segue sourceViewController]);
-    NSLog(@"destination controller = %@", [segue destinationViewController]);
-    NSLog(@"identifier = %@", [segue identifier]);
+    //NSLog(@"source controller = %@", [segue sourceViewController]);
+    //NSLog(@"destination controller = %@", [segue destinationViewController]);
+    //NSLog(@"identifier = %@", [segue identifier]);
     MapViewController *map = [segue destinationViewController];
     map.coordinate = _coordinate;
 }
 
 - (IBAction)stopNavigation:(UIButton *)sender {
     [self.myLocationManager stopUpdatingLocation];
-    NSLog(@"Latitude after stop=%f",_lastLocation.coordinate.latitude);
-    NSLog(@"Longitud after stop=%f",_lastLocation.coordinate.longitude);
+    //NSLog(@"Latitude after stop=%f",_lastLocation.coordinate.latitude);
+    //NSLog(@"Longitud after stop=%f",_lastLocation.coordinate.longitude);
     _coordinate.latitude = _lastLocation.coordinate.latitude;
     _coordinate.longitude = _lastLocation.coordinate.longitude;
-    NSLog(@"count objects in locations array: %u", [_locations count]);
+    //NSLog(@"count objects in locations array: %u", [_locations count]);
     
-
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_locations options:NSJSONWritingPrettyPrinted error:&error];
     if([jsonData length] > 0 && error == nil){
         NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-        NSLog(@"JSON STRING: %@", jsonString);
+        NSLog(@"jSon string with coordinates: %@", jsonString);
     }
-    
 }
 
 @end

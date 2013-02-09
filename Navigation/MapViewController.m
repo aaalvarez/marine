@@ -38,14 +38,16 @@
     self.myMapView.showsUserLocation = YES;    
     self.myMapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.myMapView];
-    NSLog(@"Latitude in map =%f",_coordinate.latitude);
-    NSLog(@"Longitud in map =%f",_coordinate.longitude);
+    //NSLog(@"Latitude in map =%f",_coordinate.latitude);
+    //NSLog(@"Longitud in map =%f",_coordinate.longitude);
     
     //CLLocationCoordinate2D location1 = CLLocationCoordinate2DMake(50.82191692907181, -0.13811767101287842);
-    /*
-    MyAnnotation *annotation = [[MyAnnotation alloc] initWithCoordinates:_coordinate title:@"title"];
-    [self.myMapView addAnnotation:annotation];
-     */
+
+    // Add annotation to map
+    //MyAnnotation *annotation = [[MyAnnotation alloc] initWithCoordinates:_coordinate title:@"title"];
+    //[self.myMapView addAnnotation:annotation];
+
+    // Draw route in map
     _routeView = [[CSMapRouteLayerView alloc] initWithRoute:_locations mapView:self.myMapView];
 }
 
