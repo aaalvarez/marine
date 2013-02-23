@@ -16,6 +16,7 @@
 @property (nonatomic, strong) CLLocation *lastLocation;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, strong) NSMutableArray *locations;
+@property (nonatomic, strong) NSMutableArray *points;
 
 @end
 
@@ -25,10 +26,15 @@
 @synthesize lastLocation = _lastLocation;
 @synthesize coordinate = _coordinate;
 @synthesize locations = _locations;
+@synthesize points = _points;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     _lastLocation = [locations lastObject];
-    //NSLog(@"Latitude=%f",_lastLocation.coordinate.latitude);
+    [_points addObject:[locations lastObject]];
+    
+    NSLog(@"Latitude=%f",_lastLocation.coordinate.latitude);
+    NSLog(@"Longitude=%f",_lastLocation.coordinate.longitude);
+    
     NSNumber *latitude = [NSNumber numberWithDouble:_lastLocation.coordinate.latitude];
     NSString *latitudeString = [NSString stringWithFormat:@"%f",[latitude doubleValue]];
     NSNumber *longitude = [NSNumber numberWithDouble:_lastLocation.coordinate.longitude];
@@ -52,6 +58,7 @@
 
 - (IBAction)startNavigation:(UIButton *)sender {
     _locations = [NSMutableArray array];
+    _points = [NSMutableArray array];
     if ([CLLocationManager locationServicesEnabled]) {
         self.myLocationManager = [[CLLocationManager alloc]init];
         
@@ -70,6 +77,7 @@
     //NSLog(@"identifier = %@", [segue identifier]);
     MapViewController *map = [segue destinationViewController];
     map.coordinate = _coordinate;
+    map.locations = _points;// array with cllocations
 }
 
 - (IBAction)stopNavigation:(UIButton *)sender {
