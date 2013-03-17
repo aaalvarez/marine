@@ -94,6 +94,21 @@
         NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
         NSLog(@"jSon string with coordinates: %@", jsonString);
     }
+    
+    // Send post request to web service
+    NSString *urlAsString = @"http://localhost/testNavigation.php";
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest setHTTPMethod:@"POST"];
+    //[urlRequest se]
+    [urlRequest setHTTPBody:jsonData];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+        if ([data length] > 0 && error == nil) {
+            NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"html = %@", html);
+        }
+    }];
 }
 
 @end
